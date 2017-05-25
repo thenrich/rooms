@@ -1,0 +1,11 @@
+service: default
+runtime: go
+handlers:
+- url: /.*
+  script: _go_app
+
+env_variables:
+  TWILIO_API_KEY: YOUR_TWILIO_API_KEY 
+  BASE_URL: YOUR_APP_ENGINE_URL 
+  ROOM_NUM_DIGITS: 4
+  ROOM_NUM_TIMEOUT: 20
